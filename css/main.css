@@ -1,0 +1,43 @@
+/* 
+    не знал что в CSS есть переменные
+    это пиздец как полезно рил :)
+*/
+
+:root {
+  --bg: #0f0f12;
+  --card: #121216;
+  --accent: #ff6b6b;
+  --muted: #b9b9c3;
+  --text: #eef0f6;
+}
+
+/* 
+    "*" обозначат, что все стили которые в нем написаны
+    будут применены ОБСАЛЮТНО КО ВСЕМУ HTML.
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.4;
+}
+
+footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  color: var(--muted);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 14px;
+}
